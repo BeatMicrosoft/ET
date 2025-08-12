@@ -606,6 +606,7 @@ PlayerSettings:
   - serializedVersion: 2
     m_BuildTarget: PS4
     m_EncodingQuality: 1
+  m_BuildTargetGroupHDRCubemapEncodingQuality: []
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetGroupLoadStoreDebugModeSettings: []
   m_BuildTargetNormalMapEncoding: []
@@ -869,16 +870,16 @@ PlayerSettings:
   webGLMemoryLinearGrowthStep: 16
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
-  webGLEnableWebGPU: 0
   webGLPowerPreference: 2
   webGLWebAssemblyTable: 0
   webGLWebAssemblyBigInt: 0
   webGLCloseOnQuit: 0
   webWasm2023: 0
+  webEnableSubmoduleStrippingCompatibility: 0
   scriptingDefineSymbols:
     Android: UNITY;ENABLE_VIEW
     Server: UNITY;ENABLE_VIEW
-    Standalone: UNITY;ENABLE_VIEW
+    Standalone: UNITY;ENABLE_VIEW;INITED
     WebGL: UNITY;ENABLE_VIEW
     iPhone: UNITY;ENABLE_VIEW
   additionalCompilerArguments: {}
@@ -1023,3 +1024,4 @@ PlayerSettings:
   insecureHttpOption: 0
   androidVulkanDenyFilterList: []
   androidVulkanAllowFilterList: []
+  androidVulkanDeviceFilterListAsset: {fileID: 0}

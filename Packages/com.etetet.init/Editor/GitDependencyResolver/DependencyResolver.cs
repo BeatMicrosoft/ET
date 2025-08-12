@@ -23,8 +23,10 @@ namespace Hibzz.DependencyResolver
             string packageName = default;
             string moveFileName = default;
             #if UNITY_6000_0_OR_NEWER
-            packageName = package;
-            moveFileName = "MoveToPackages_6";
+            // packageName = package;
+            // moveFileName = "MoveToPackages_6";
+            packageName =$"{package}@{version}";
+            moveFileName = "MoveToPackages";
             #else 
             packageName =$"{package}@{version}";
             moveFileName = "MoveToPackages";
@@ -93,11 +95,11 @@ namespace Hibzz.DependencyResolver
                 string[] ss = baseName.Split("@");
                 string packageName = ss[0];
                 #if UNITY_6000_0_OR_NEWER
-                string version = "";
+                // string version = "";
                 #else 
                 string version = ss[1];
                 #endif
-
+                string version = ss[1];
                 MoveToPackage(packageName, version);
             }
             
